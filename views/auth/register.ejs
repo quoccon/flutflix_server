@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Nhập và Đăng Ký</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .custom-background {
+      background-color: #23272e; /* Thiết lập màu nền mong muốn */
+    }
+    .inner-content {
+      background-color: #23272e; /* Màu nền mong muốn */
+      padding: 20px; /* Để tạo khoảng cách giữa các phần tử và lề nội dung */
+      border-radius: 10px; /* Để bo góc các phần tử */
+    }
+    input[type="email"],
+    input[type="password"] {
+      background-color: #ccc; /* Màu grey */
+    }
+    .login{
+        font-weight: bold;
+    }
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px; /* Điều chỉnh kích thước ảnh tùy ý */
+      height: auto; /* Để giữ tỉ lệ khung hình */
+    }
+  </style>
+</head>
+<body>
+
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden custom-background min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body inner-content">
+                <img src="image/flutflix.png" class="centered-image" alt="image">
+                <form method="post" action="/register">
+                  <div class="mb-3">
+                    <label for="username" class="form-label text-white">Username</label>
+                    <input type="username" class="form-control" id="username" aria-describedby="username" name="username" placeholder="Enter your username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-white">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label text-white">Phone</label>
+                    <input type="phone" class="form-control" id="phone" aria-describedby="phone" name="phone" placeholder="Enter your phone">
+                  </div>
+                  <div class="mb-4">
+                    <label for="password" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                  </div>
+
+                  <button type="submit" class="btn btn-danger w-100 py-8 fs-4 mb-4 rounded-2 login">Đăng ký</button>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p class="fs-4 mb-0 fw-bold text-white">Bạn đã có tài khoản?</p>
+                    <a class="text-danger fw-bold ms-2" href="/">Đăng nhập</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
